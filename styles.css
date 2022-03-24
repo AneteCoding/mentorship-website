@@ -13,9 +13,9 @@ body {
   font-family: "PT Mono", monospace;
 }
 .button {
-  background-color: #ff3980;
+  background-color: #c2540b;
   text-decoration: none;
-  border: 1px solid #ff3980;
+  border: 1px solid #ff9939;
   border-radius: 12px;
   padding: 20px;
   color: white;
@@ -27,7 +27,7 @@ body {
 }
 
 .title {
-  color: white;
+  color: rgb(122, 58, 15);
   text-align: center;
 }
 p {
@@ -35,18 +35,18 @@ p {
   font-size: 20px;
 }
 
-.dates {
-  color: #ff3980;
+.subtitle {
+  color: #c2540b;
   text-align: center;
 }
 
 .intro {
-  color: white;
+  color: rgb(122, 58, 15);
 }
-.faq {
+.fad {
   padding: 40px 100px;
 }
-.question {
+.fact {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -57,7 +57,7 @@ p {
 }
 .video {
   color: white;
-  background: #191635;
+  background: #a09765;
   text-align: center;
   padding: 40px 100px;
 }
