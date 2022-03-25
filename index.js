@@ -1,10 +1,11 @@
 const handleOpenFact = (entryFact) => {
+
     entryFact.classList.toogle("right");
     entryFact.classList.toogle("bottom");
 }
 
 const handleOpenDescription = (entryDescription) => {
-    entryDescription.classList.toogle("answer-hidden")
+    entryDescription.classList.toogle("description-hidden")
 }
 
 const handleHideOtherFacts = (currentDescription) => {
@@ -19,7 +20,7 @@ const handleHideOtherFacts = (currentDescription) => {
         }
         fact.classList.remove("bottom");
         fact.classList.add("right");
-        description.classList.add("answer-hidden");
+        description.classList.add("description-hidden");
     });
 }
 
