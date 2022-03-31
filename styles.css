@@ -73,9 +73,10 @@ p {
   transition: border 0.5s;
 }
 
-/* .fact-interactive:hover {
-  border: 1px solid var(--color-rtg-pink);
-} */
+.fact-interactive:hover {
+  /* border: 1px solid var(--color-rtg-pink); */
+  color: #c2540b;
+}
 .description {
   font-size: 20px;
   padding-left: 30px;
