@@ -104,7 +104,7 @@ const fadList = () => {
         movements.`,
         },
         {
-            fact: `How can I support?`,
+            fact: `HOW CAN I SUPPORT?`,
             description: `You can do this right here 👉
         <a
           class="button"
