@@ -1,11 +1,11 @@
 const handleOpenFact = (entryFact) => {
 
-    entryFact.classList.toogle("right");
-    entryFact.classList.toogle("bottom");
+    entryFact.classList.toggle("right");
+    entryFact.classList.toggle("bottom");
 }
 
 const handleOpenDescription = (entryDescription) => {
-    entryDescription.classList.toogle("description-hidden")
+    entryDescription.classList.toggle("description-hidden")
 }
 
 const handleHideOtherFacts = (currentDescription) => {
