@@ -79,14 +79,14 @@ p {
 .description {
   font-size: 20px;
   padding-left: 30px;
-
   max-height: fit-content;
   overflow: hidden;
   transition: max-height 0.5s;
 }
 
 .description-hidden {
-  max-height: 0px;
+  height: fit-content;
+  overflow: visible;
 }
 
 .description-visible {

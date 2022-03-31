@@ -25,6 +25,8 @@ const handleHideOtherFacts = (currentDescription) => {
 }
 
 
+
+
 const getDescriptionContainer = (entryFact, entryDescription) => {
     const entryContainer = document.createElement("div");
     entryContainer.className = "fact-container";
