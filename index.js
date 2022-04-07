@@ -1,3 +1,4 @@
+
 const handleOpenFact = (entryFact) => {
 
     entryFact.classList.toggle("right");
@@ -24,10 +25,10 @@ const handleHideOtherFacts = (currentDescription) => {
     });
 }
 
-
-
+// fadContainer.appendChild(button);
 
 const getDescriptionContainer = (entryFact, entryDescription) => {
+
     const entryContainer = document.createElement("div");
     entryContainer.className = "fact-container";
     entryContainer.append(entryFact);
@@ -37,10 +38,15 @@ const getDescriptionContainer = (entryFact, entryDescription) => {
 }
 
 const getFadListContainer = () => {
+
     return document.createElement("div")
+
 }
 
+
+
 const getEntryDescription = (description) => {
+
 
     const descriptionElement = document.createElement("div")
     descriptionElement.className = "description description-hidden";
@@ -57,6 +63,7 @@ const getEntryFact = (fact) => {
 }
 
 const fadList = () => {
+
 
     const fadData = [
         {
@@ -119,6 +126,7 @@ const fadList = () => {
 
     const fadContainer = getFadListContainer();
 
+
     const handleFactClick = (entryFact, entryDescription) => {
 
         handleHideOtherFacts(entryDescription);
@@ -126,7 +134,12 @@ const fadList = () => {
         handleOpenDescription(entryDescription);
     }
 
+
+
+
     fadData.forEach((fadEntry) => {
+
+
         const { fact, description } = fadEntry;
         const entryDescription = getEntryDescription(description);
         const entryFact = getEntryFact(fact);
@@ -138,12 +151,51 @@ const fadList = () => {
         const entryContainer = getDescriptionContainer(entryFact, entryDescription);
         fadContainer.append(entryContainer);
 
+
     })
 
     const fadElement = document.getElementById("fad");
     fadElement.innerHTML = "";
 
     fadElement.append(fadContainer);
+
+    const getAllDescriptions = () => {
+        return document.querySelectorAll("#fad .fact-container .description")
+    }
+
+    const openAll = () => {
+        const descript = getAllDescriptions();
+        descript.forEach((description) => {
+            description.style.maxHeight = "initial";
+        });
+    }
+    const closeAll = () => {
+        const descript = getAllDescriptions();
+        descript.forEach((description) => {
+            description.style.maxHeight = 0;
+        });
+    }
+    const buttonToggleAll = document.getElementById("toggle-all");
+
+    let stateOfToggle = "closed";
+
+    buttonToggleAll.onclick = function () {
+
+        if (stateOfToggle === "closed") {
+            openAll();
+            stateOfToggle = "opened";
+            buttonToggleAll.innerHTML = "CLOSE ALL";
+
+
+        } else if (stateOfToggle === "opened") {
+            closeAll();
+            stateOfToggle = "closed";
+            buttonToggleAll.innerHTML = "OPEN ALL";
+        }
+
+    }
+
+
 
 };
 
