@@ -166,13 +166,15 @@ const fadList = () => {
     const openAll = () => {
         const descript = getAllDescriptions();
         descript.forEach((description) => {
-            description.style.maxHeight = "initial";
+            // description.style.maxHeight = "initial";
+            description.classList.toggle("description-hidden")
         });
     }
     const closeAll = () => {
         const descript = getAllDescriptions();
         descript.forEach((description) => {
-            description.style.maxHeight = 0;
+            // description.style.maxHeight = 0;
+            description.classList.add("description-hidden");
         });
     }
     const buttonToggleAll = document.getElementById("toggle-all");
