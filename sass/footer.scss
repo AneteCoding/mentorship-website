@@ -3,5 +3,6 @@
 footer {
     color: v.$footerColor;
     text-align: center;
-    font-size: smaller;
+    font-size: v.$fontSizeFooter;
+    padding-bottom: 20px;
 }

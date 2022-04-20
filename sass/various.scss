@@ -1,3 +1,5 @@
+@use 'variables.scss'as v;
+
 html {
     scroll-behavior: smooth;
 }
@@ -8,7 +10,7 @@ body {
 
 p {
     text-align: center;
-    font-size: 20px;
+    font-size: v.$fontSizeIntro;
 }
 
 .highlighted-text:hover {
@@ -16,16 +18,16 @@ p {
 }
 
 .button {
-    background-color: #c2540b;
+    background-color: v.$primaryColor;
     text-decoration: none;
-    border: 1px solid #ff9939;
+    border: 1px solid v.$secondaryColor;
     border-radius: 12px;
     padding: 20px;
-    color: #ffff;
+    color: v.$alternateTextColor;
 
     &:hover {
-        background-color: #ffff;
-        color: black;
+        background-color: v.$alternateTextColor;
+        color: v.$primaryColor;
         transition: all 0.5s;
     }
 }

@@ -1,3 +1,5 @@
+@use 'variables.scss'as v;
+
 .heading {
     background: url(background.jpg);
     background-size: cover;
@@ -5,19 +7,16 @@
     height: 85vh;
     display: block;
     margin: 0 auto;
-    /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
-
     padding: 40px 100px;
 }
 
 .intro {
-    color: #ffff;
+    color: v.$alternateTextColor;
 }
 
 .title {
-    color: #ffff;
+    font-size: v.$fontSizeTitle;
+    color: v.$alternateTextColor;
     text-align: center;
     padding: 40px;
 }
