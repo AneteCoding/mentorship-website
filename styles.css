@@ -154,7 +154,25 @@ p {
 .toggle-btn {
   padding: 40px 100px;
 }
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: r;
+  gap: 40px;
+  padding: 30px;
+}
 
+.social-container a {
+  text-decoration: none;
+}
+
+
+
+.social-image {
+  width: 40px;
+  height: 40px;
+}
 .video {
   color: white;
   background: #a09765;
