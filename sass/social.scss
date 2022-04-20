@@ -1,8 +1,22 @@
-@use 'mixins.scss' as m;
+@use 'helpers.scss'as h;
 
-// .social-container{
-//     @include m.centered();
-// }
+.social-container {
+    @include h.center();
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 30px;
+}
 
+.social-container a {
+    text-decoration: none;
+}
 
+.social-heading {
+    font-size: 30px;
+}
 
+.social-image {
+    width: 80px;
+    height: 80px;
+    fill: white;
+}
