@@ -1,8 +1,17 @@
+@use 'variables.scss'as v;
+@use 'helpers.scss'as h;
 @use 'chevron.scss'as chevron;
 @use 'fad.scss'as fad;
 @use 'footer.scss'as footer;
 @use 'intro.scss'as intro;
 @use 'quote.scss'as quote;
 @use 'social.scss'as social;
-@use 'various.scss'as various;
 @use 'video.scss'as video;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}

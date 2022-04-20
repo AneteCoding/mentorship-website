@@ -16,3 +16,33 @@
     width: 40px;
     height: 40px;
 }
+@use 'variables.scss'as v;
+
+
+p {
+    text-align: center;
+    font-size: v.$fontSizeIntro;
+}
+
+.highlighted-text:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: v.$primaryColor;
+    text-decoration: none;
+    border: 1px solid v.$secondaryColor;
+    border-radius: 12px;
+    padding: 20px;
+    color: v.$alternateTextColor;
+
+    &:hover {
+        background-color: v.$alternateTextColor;
+        color: v.$primaryColor;
+        transition: all 0.5s;
+    }
+}
+
+.toggle-btn {
+    padding: 40px 100px;
+}
