@@ -1,0 +1,23 @@
+{
+  "name": "mentorship-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass sass/main.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AneteCoding/mentorship-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AneteCoding/mentorship-website/issues"
+  },
+  "homepage": "https://github.com/AneteCoding/mentorship-website#readme",
+  "dependencies": {
+    "sass": "^1.50.1"
+  }
+}

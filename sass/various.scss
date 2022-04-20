@@ -1,0 +1,35 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.highlighted-text:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #c2540b;
+    text-decoration: none;
+    border: 1px solid #ff9939;
+    border-radius: 12px;
+    padding: 20px;
+    color: #ffff;
+
+    &:hover {
+        background-color: #ffff;
+        color: black;
+        transition: all 0.5s;
+    }
+}
+
+.toggle-btn {
+    padding: 40px 100px;
+}

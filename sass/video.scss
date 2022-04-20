@@ -1,0 +1,12 @@
+@use 'variables.scss'as v;
+
+.video {
+    color: v.$alternateTextColor;
+    background: v.$videoBackgroundColor;
+    text-align: center;
+    padding: 40px 100px;
+
+    &-frame {
+        border: 0px;
+    }
+}

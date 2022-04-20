@@ -1,0 +1,29 @@
+.heading {
+    background: url(background.jpg);
+    background-size: cover;
+    max-width: 50%;
+    height: 85vh;
+    display: block;
+    margin: 0 auto;
+    /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+
+    padding: 40px 100px;
+}
+
+.intro {
+    color: #ffff;
+}
+
+.title {
+    color: #ffff;
+    text-align: center;
+    padding: 40px;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}

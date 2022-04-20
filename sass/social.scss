@@ -1,0 +1,5 @@
+@use 'mixins.scss' as m;
+
+.social-container{
+    @include m.centered();
+}
